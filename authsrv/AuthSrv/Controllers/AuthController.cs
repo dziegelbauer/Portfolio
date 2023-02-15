@@ -134,5 +134,15 @@ namespace AuthSrv.Controllers
                 result = newUser
             });
         }
+
+        [HttpGet("renew")]
+        [Authorize]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status419AuthenticationTimeout)]
+        public async Task<IActionResult> RenewToken()
+        {
+            await Task.Delay(0);
+            return Ok();
+        }
     }
 }
