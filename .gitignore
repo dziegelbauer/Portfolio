@@ -6,4 +6,6 @@
 /apisrv/bin
 /authsrv/AuthSrv/obj
 /authsrv/AuthSrv/bin
+/auth_server/target
+/auth_server/.idea
 /authsrv/AuthSrv/log
