@@ -1,5 +1,4 @@
 ﻿using AuthSrv.Models;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,12 +11,5 @@ public class AuthDbContext : IdentityDbContext<ZOrgUser>
 
   }
 
-  protected override void OnModelCreating(ModelBuilder builder)
-  {
-    base.OnModelCreating(builder);
-    
-    
-  }
-  
-  public DbSet<ZOrgUser> Users { get; set; }
+  public DbSet<ZOrgUser> ZOrgUsers { get; set; } = null!;
 }
